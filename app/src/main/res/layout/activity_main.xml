@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demochat.taskapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_customer"
+        />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gaurav"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="@id/textview_customer"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth      "
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_dob"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gaurav"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/textview_dob"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dateofbirth"
+        app:layout_constraintTop_toBottomOf="@id/customer_name"
+        />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="ContactNumber"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateofbirth"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_contactnumber"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/textview_contactnumber"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contactnumber"
+        app:layout_constraintTop_toBottomOf="@id/dateofbirth"
+        />
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="SubscriptionId"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_contactnumber"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_subid"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/textview_subid"
+        android:layout_marginTop="10dp"
+        android:id="@+id/subscriptionid"
+        app:layout_constraintTop_toBottomOf="@id/textview_contactnumber"
+        />
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Subscription Balance"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscriptionid"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_subbalance"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/textview_subbalance"
+        android:layout_marginTop="10dp"
+        android:id="@+id/subscriptionbalance"
+        app:layout_constraintTop_toBottomOf="@id/subscriptionid"
+        />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_subbalance"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_productname"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/textview_productname"
+        android:layout_marginTop="10dp"
+        android:id="@+id/product_name"
+        app:layout_constraintTop_toBottomOf="@id/subscriptionbalance"
+        />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_productname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textview_productprice"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/textview_productprice"
+        android:layout_marginTop="10dp"
+        android:id="@+id/product_price"
+        app:layout_constraintTop_toBottomOf="@id/product_name"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
